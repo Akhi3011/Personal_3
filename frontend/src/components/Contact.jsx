@@ -5,7 +5,8 @@ import './Contact.css';
 
 const Contact = () => {
   const handleReserve = () => {
-    window.open('https://wa.me/917382638620?text=Hi! I would like to reserve a table at Bean Board', '_blank');
+    // Redirect to Swiggy Dineout for table reservation
+    window.open('https://www.swiggy.com/dineout', '_blank');
   };
 
   return (
