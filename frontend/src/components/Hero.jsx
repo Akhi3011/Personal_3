@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 import './Hero.css';
 
 const Hero = () => {
@@ -18,29 +19,64 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <div className="hero-content container">
-        <div className="hero-announcement">
+        <motion.div 
+          className="hero-announcement"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <span className="caption font-mono">Rated 4.3 ⭐ • 1,123 Reviews</span>
-        </div>
+        </motion.div>
         
-        <h1 className="heading-hero hero-title">
+        <motion.h1 
+          className="heading-hero hero-title"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        >
           Where Every Cup<br />Tells a Story
-        </h1>
+        </motion.h1>
         
-        <p className="body-large hero-subtitle">
+        <motion.p 
+          className="body-large hero-subtitle"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+        >
           Experience the perfect blend of quality coffee, cozy ambience, 
           and warm hospitality at Visakhapatnam's favorite café
-        </p>
+        </motion.p>
 
-        <div className="hero-cta">
-          <button onClick={handleReserve} className="btn-primary">
+        <motion.div 
+          className="hero-cta"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+        >
+          <motion.button 
+            onClick={handleReserve} 
+            className="btn-primary"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             Reserve a Table
-          </button>
-          <button onClick={scrollToMenu} className="btn-secondary">
+          </motion.button>
+          <motion.button 
+            onClick={scrollToMenu} 
+            className="btn-secondary"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             Explore Menu <ArrowRight size={16} style={{ marginLeft: '0.5rem' }} />
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
-        <div className="hero-info">
+        <motion.div 
+          className="hero-info"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+        >
           <div className="info-item">
             <span className="caption font-mono">HOURS</span>
             <p className="body-small">Open Daily · Closes 11 PM</p>
@@ -55,7 +91,7 @@ const Hero = () => {
             <span className="caption font-mono">LOCATION</span>
             <p className="body-small">Seetammadhara, Vizag</p>
           </div>
-        </div>
+        </motion.div>
       </div>
       
       <div className="hero-image-overlay"></div>

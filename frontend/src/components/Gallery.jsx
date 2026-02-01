@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './Gallery.css';
 
 const galleryImages = [
@@ -14,50 +15,36 @@ const Gallery = () => {
   return (
     <section id="gallery" className="gallery-section">
       <div className="container">
-        <div className="gallery-header">
+        <motion.div 
+          className="gallery-header"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="heading-1">Gallery</h2>
           <p className="body-large">
             A glimpse into the Bean Board experience
           </p>
-        </div>
+        </motion.div>
 
         <div className="gallery-grid">
-          <div className="gallery-item item-1">
-            <img src={galleryImages[0]} alt="Bean Board Gallery 1" />
-            <div className="gallery-overlay">
-              <span className="caption font-mono">View</span>
-            </div>
-          </div>
-          <div className="gallery-item item-2">
-            <img src={galleryImages[1]} alt="Bean Board Gallery 2" />
-            <div className="gallery-overlay">
-              <span className="caption font-mono">View</span>
-            </div>
-          </div>
-          <div className="gallery-item item-3">
-            <img src={galleryImages[2]} alt="Bean Board Gallery 3" />
-            <div className="gallery-overlay">
-              <span className="caption font-mono">View</span>
-            </div>
-          </div>
-          <div className="gallery-item item-4">
-            <img src={galleryImages[3]} alt="Bean Board Gallery 4" />
-            <div className="gallery-overlay">
-              <span className="caption font-mono">View</span>
-            </div>
-          </div>
-          <div className="gallery-item item-5">
-            <img src={galleryImages[4]} alt="Bean Board Gallery 5" />
-            <div className="gallery-overlay">
-              <span className="caption font-mono">View</span>
-            </div>
-          </div>
-          <div className="gallery-item item-6">
-            <img src={galleryImages[5]} alt="Bean Board Gallery 6" />
-            <div className="gallery-overlay">
-              <span className="caption font-mono">View</span>
-            </div>
-          </div>
+          {galleryImages.map((image, index) => (
+            <motion.div 
+              key={index}
+              className={`gallery-item item-${index + 1}`}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.02 }}
+            >
+              <img src={image} alt={`Bean Board Gallery ${index + 1}`} />
+              <div className="gallery-overlay">
+                <span className="caption font-mono">View</span>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

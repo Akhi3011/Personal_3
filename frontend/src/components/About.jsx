@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { aboutContent } from '../data/mockData';
 import './About.css';
 
@@ -7,15 +8,27 @@ const About = () => {
     <section id="about" className="about-section">
       <div className="container">
         <div className="about-content">
-          <div className="about-image">
+          <motion.div 
+            className="about-image"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <img 
               src="https://images.unsplash.com/photo-1572231086568-6984943e6629"
               alt="Bean Board Café Interior"
               className="about-img"
             />
-          </div>
+          </motion.div>
           
-          <div className="about-text">
+          <motion.div 
+            className="about-text"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <h2 className="heading-1 about-title">{aboutContent.title}</h2>
             
             <p className="body-large about-paragraph">
@@ -35,7 +48,7 @@ const About = () => {
                 <p className="body-small">Cozy · Modern · Premium</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
