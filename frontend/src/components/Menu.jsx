@@ -18,15 +18,30 @@ const Menu = () => {
         </div>
 
         <div className="menu-categories">
-          {menuCategories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={`category-btn ${activeCategory === category.id ? 'active' : ''}`}
-            >
-              {category.name}
-            </button>
-          ))}
+          <button
+            onClick={() => setActiveCategory('coffee')}
+            className={`category-btn ${activeCategory === 'coffee' ? 'active' : ''}`}
+          >
+            Coffee
+          </button>
+          <button
+            onClick={() => setActiveCategory('snacks')}
+            className={`category-btn ${activeCategory === 'snacks' ? 'active' : ''}`}
+          >
+            Snacks
+          </button>
+          <button
+            onClick={() => setActiveCategory('desserts')}
+            className={`category-btn ${activeCategory === 'desserts' ? 'active' : ''}`}
+          >
+            Desserts
+          </button>
+          <button
+            onClick={() => setActiveCategory('combos')}
+            className={`category-btn ${activeCategory === 'combos' ? 'active' : ''}`}
+          >
+            Combos
+          </button>
         </div>
 
         <div className="menu-content">
@@ -43,15 +58,19 @@ const Menu = () => {
           </div>
 
           <div className="menu-items">
-            {activeMenu.items.map((item, index) => (
-              <div key={index} className="menu-item">
-                <div className="item-header">
-                  <h4 className="heading-3">{item.name}</h4>
-                  <span className="item-price font-mono">{item.price}</span>
-                </div>
-                <p className="body-small item-description">{item.description}</p>
-              </div>
-            ))}
+            {activeMenu.items && activeMenu.items.length > 0 && (
+              <>
+                {activeMenu.items.slice(0, 6).map((item, index) => (
+                  <div key={index} className="menu-item">
+                    <div className="item-header">
+                      <h4 className="heading-3">{item.name}</h4>
+                      <span className="item-price font-mono">{item.price}</span>
+                    </div>
+                    <p className="body-small item-description">{item.description}</p>
+                  </div>
+                ))}
+              </>
+            )}
           </div>
         </div>
 

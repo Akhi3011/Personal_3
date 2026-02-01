@@ -18,11 +18,12 @@ const About = () => {
           <div className="about-text">
             <h2 className="heading-1 about-title">{aboutContent.title}</h2>
             
-            {aboutContent.paragraphs.map((paragraph, index) => (
-              <p key={index} className="body-large about-paragraph">
-                {paragraph}
-              </p>
-            ))}
+            <p className="body-large about-paragraph">
+              {aboutContent.paragraphs[0]}
+            </p>
+            <p className="body-large about-paragraph">
+              {aboutContent.paragraphs[1]}
+            </p>
             
             <div className="about-features">
               <div className="feature-item">

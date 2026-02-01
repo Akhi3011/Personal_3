@@ -14,7 +14,7 @@ const Signature = () => {
         </div>
 
         <div className="signature-journey">
-          {signatureExperience.map((stage, index) => (
+          {signatureExperience && signatureExperience.slice(0, 4).map((stage, index) => (
             <div key={index} className="journey-stage">
               <div className="stage-number">
                 <span className="caption font-mono">{String(index + 1).padStart(2, '0')}</span>

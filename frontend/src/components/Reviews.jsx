@@ -12,9 +12,10 @@ const Reviews = () => {
             <div className="rating-score">
               <span className="score-number">4.3</span>
               <div className="stars">
-                {[1, 2, 3, 4].map((star) => (
-                  <Star key={star} size={16} fill="currentColor" />
-                ))}
+                <Star size={16} fill="currentColor" />
+                <Star size={16} fill="currentColor" />
+                <Star size={16} fill="currentColor" />
+                <Star size={16} fill="currentColor" />
                 <Star size={16} fill="none" strokeOpacity={0.3} />
               </div>
             </div>
@@ -28,7 +29,7 @@ const Reviews = () => {
         </div>
 
         <div className="testimonials-grid">
-          {testimonials.map((testimonial, index) => (
+          {testimonials && testimonials.slice(0, 4).map((testimonial, index) => (
             <div key={index} className="testimonial-card">
               <div className="testimonial-header">
                 <div className="testimonial-avatar">
@@ -38,9 +39,11 @@ const Reviews = () => {
                   <h4 className="heading-3">{testimonial.name}</h4>
                   <div className="testimonial-meta">
                     <div className="testimonial-stars">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} size={14} fill="currentColor" />
-                      ))}
+                      <Star size={14} fill="currentColor" />
+                      <Star size={14} fill="currentColor" />
+                      <Star size={14} fill="currentColor" />
+                      <Star size={14} fill="currentColor" />
+                      {testimonial.rating === 5 && <Star size={14} fill="currentColor" />}
                     </div>
                     <span className="caption">{testimonial.date}</span>
                   </div>
