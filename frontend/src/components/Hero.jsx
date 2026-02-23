@@ -44,7 +44,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
           Experience the perfect blend of quality coffee, cozy ambience, 
-          and warm hospitality at Visakhapatnam's favorite café
+          and warm hospitality at Visakhapatnam's favorite food destination
         </motion.p>
 
         <motion.div 
