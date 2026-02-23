@@ -2,23 +2,23 @@
 
 export const cafeInfo = {
   name: "ITHI HA ASA Foods",
-  teluguName: "బీన్ బోర్డు – సీతమ్మధార",
   tagline: "Where Every Cup Tells a Story",
   rating: 4.3,
   reviews: 1123,
   priceRange: "₹80 - ₹360",
-  phone: "07382638620",
-  whatsapp: "917382638620",
+  phone: "+91 89775 31113",
+  email: "info.itihasafoods@gmail.com",
+  whatsapp: "918977531113",
   address: {
-    line1: "Seetammadhara",
-    line2: "Visakhapatnam",
-    line3: "Andhra Pradesh",
+    line1: "Plot no: 396, Alluri Sitarama Raju Marg",
+    line2: "Vishalakshi Nagar",
+    line3: "Visakhapatnam, AP 530043",
     state: "India"
   },
-  hours: "Open Daily · Closes at 11:00 PM",
+  hours: "Open Daily · 8:00 AM - 11:00 PM",
   services: ["Dine-in", "Takeaway", "No-contact delivery"],
-  swiggyLink: "https://www.swiggy.com",
-  googleMapsLink: "https://maps.google.com/?q=17.741453,83.30474",
+  swiggyLink: "https://www.swiggy.com/dineout",
+  googleMapsLink: "https://maps.google.com/?q=17.7397,83.3145",
   images: {
     hero: "https://itihaasafoods.in/assets/images/r3.jpg",
     about: "https://itihaasafoods.in/assets/images/2.jpg",
@@ -44,7 +44,7 @@ export const menuCategories = [
     id: "coffee",
     name: "Coffee Menu",
     description: "Handcrafted espresso-based beverages",
-    image: "https://itihaasafoods.in/assets/images/444.jpg",
+    icon: "☕",
     items: [
       { name: "Espresso", priceSmall: "₹90", priceLarge: "₹120", description: "Pure coffee essence" },
       { name: "Americano", priceSmall: "₹110", priceLarge: "₹140", description: "Bold & robust" },
@@ -52,7 +52,7 @@ export const menuCategories = [
       { name: "Cappuccino", priceSmall: "₹130", priceLarge: "₹180", description: "Classic Italian perfection" },
       { name: "Cafe Mocha", priceSmall: "₹170", priceLarge: "₹230", description: "Chocolate meets coffee" },
       { name: "Caramel Macchiato", priceSmall: "₹170", priceLarge: "₹230", description: "Sweet caramel layers" },
-      { name: "Bean Board Signature", priceSmall: "₹150", priceLarge: "₹190", description: "Our special blend" },
+      { name: "Signature Blend", priceSmall: "₹150", priceLarge: "₹190", description: "Our special blend" },
       { name: "Belgian Hot Chocolate", priceSmall: "₹210", priceLarge: "₹360", description: "Rich Belgian chocolate" },
       { name: "Marble Mocha", priceSmall: "₹190", priceLarge: "₹290", description: "Swirled perfection" },
       { name: "Brewed Coffee Jar", priceSmall: "₹190", priceLarge: "₹340", description: "Fresh brewed" },
@@ -61,42 +61,42 @@ export const menuCategories = [
   },
   {
     id: "frappe",
-    name: "Cream Based Frappe",
+    name: "Cream Frappe",
     description: "Indulgent blended drinks",
-    image: "https://itihaasafoods.in/assets/images/445.jpg",
+    icon: "🥤",
     items: [
-      { name: "Chocolate Chip", price: "₹160", description: "Creamy chocolate chips" },
-      { name: "White Chocolate", price: "₹160", description: "Smooth white chocolate" },
-      { name: "Raspberry Chocolate", price: "₹190", description: "Berry meets chocolate" },
-      { name: "Strawberry Chocolate", price: "₹190", description: "Fresh strawberry twist" },
-      { name: "Blueberry Chocolate", price: "₹190", description: "Blueberry delight" },
-      { name: "Blueberry Cream", price: "₹160", description: "Pure blueberry cream" },
-      { name: "Strawberry Cream", price: "₹160", description: "Fresh strawberry cream" },
-      { name: "Black Current Cream", price: "₹160", description: "Tangy black currant" }
+      { name: "Chocolate Chip", price: "₹160" },
+      { name: "White Chocolate", price: "₹160" },
+      { name: "Raspberry Chocolate", price: "₹190" },
+      { name: "Strawberry Chocolate", price: "₹190" },
+      { name: "Blueberry Chocolate", price: "₹190" },
+      { name: "Blueberry Cream", price: "₹160" },
+      { name: "Strawberry Cream", price: "₹160" },
+      { name: "Black Current Cream", price: "₹160" }
     ]
   },
   {
     id: "cozy",
     name: "Cozy Sips",
-    description: "Warm and comforting beverages",
-    image: "https://itihaasafoods.in/assets/images/NZ6_0598.jpg",
+    description: "Warm beverages",
+    icon: "☕",
     items: [
-      { name: "Flavoured Steamer", price: "₹160", description: "Warm flavored milk" },
-      { name: "Hot Chocolate", price: "₹180", description: "Classic hot chocolate" },
-      { name: "Coffee Frappe", price: "₹160", description: "Iced coffee bliss" },
-      { name: "Mocha Frappe", price: "₹190", description: "Chocolate coffee blend" },
-      { name: "Affogato", price: "₹160", description: "Ice cream meets espresso" },
-      { name: "Frappogato", price: "₹250", description: "Premium frozen treat" },
-      { name: "Iced Americano", price: "₹130", description: "Chilled bold coffee" },
-      { name: "Iced Latte", price: "₹180", description: "Cold smooth latte" },
-      { name: "Iced Mocha", price: "₹190", description: "Cold chocolate coffee" }
+      { name: "Flavoured Steamer", price: "₹160" },
+      { name: "Hot Chocolate", price: "₹180" },
+      { name: "Coffee Frappe", price: "₹160" },
+      { name: "Mocha Frappe", price: "₹190" },
+      { name: "Affogato", price: "₹160" },
+      { name: "Frappogato", price: "₹250" },
+      { name: "Iced Americano", price: "₹130" },
+      { name: "Iced Latte", price: "₹180" },
+      { name: "Iced Mocha", price: "₹190" }
     ]
   },
   {
     id: "icedtea",
     name: "Iced Teas",
     description: "Refreshing flavored teas",
-    image: "https://itihaasafoods.in/assets/images/446.jpg",
+    icon: "🍹",
     items: [
       { name: "Blueberry", price: "₹130" },
       { name: "Raspberry / Raspberry Mint", price: "₹130" },
@@ -115,8 +115,8 @@ export const menuCategories = [
   {
     id: "hottea",
     name: "Hot Teas",
-    description: "Traditional tea selection",
-    image: "https://itihaasafoods.in/assets/images/NZ6_0660.jpg",
+    description: "Traditional tea",
+    icon: "🍵",
     items: [
       { name: "Black Tea", price: "₹80" },
       { name: "Green Tea", price: "₹80" },
@@ -129,55 +129,55 @@ export const menuCategories = [
   {
     id: "sandwiches",
     name: "Sandwiches",
-    description: "Freshly made sandwiches",
-    image: "https://itihaasafoods.in/assets/images/r2.jpg",
+    description: "Freshly made",
+    icon: "🥪",
     items: [
-      { name: "Paneer Sandwich", price: "₹170", description: "Grilled paneer delight" },
-      { name: "Spinach Sandwich", price: "₹180", description: "Healthy & tasty" },
-      { name: "Chicken Tikka Sandwich", price: "₹190", description: "Spicy tikka filling" },
-      { name: "Fiery Sandwich", price: "₹180", description: "Hot & spicy" },
-      { name: "Tandoori Sandwich", price: "₹180", description: "Tandoori flavored" },
-      { name: "Grilled Chicken Sandwich", price: "₹190", description: "Classic grilled chicken" },
-      { name: "Cheese Chicken Sandwich", price: "₹190", description: "Cheesy chicken goodness" }
+      { name: "Paneer Sandwich", price: "₹170" },
+      { name: "Spinach Sandwich", price: "₹180" },
+      { name: "Chicken Tikka Sandwich", price: "₹190" },
+      { name: "Fiery Sandwich", price: "₹180" },
+      { name: "Tandoori Sandwich", price: "₹180" },
+      { name: "Grilled Chicken Sandwich", price: "₹190" },
+      { name: "Cheese Chicken Sandwich", price: "₹190" }
     ]
   },
   {
     id: "rolls",
     name: "Rolls & Fries",
-    description: "Quick bites and sides",
-    image: "https://itihaasafoods.in/assets/images/r7.jpg",
+    description: "Quick bites",
+    icon: "🌯",
     items: [
-      { name: "Smoked Roll", price: "₹180", description: "Smoky flavors" },
-      { name: "Tandoori Roll", price: "₹180", description: "Tandoori spiced" },
-      { name: "Paneer Roll", price: "₹150", description: "Paneer wrap" },
-      { name: "French Fries", price: "₹160", description: "Crispy golden fries" },
-      { name: "Potato Garlic Poppers", price: "₹150", description: "Garlic-infused" },
-      { name: "Hash Browns", price: "₹190", description: "Crispy potato patties" }
+      { name: "Smoked Roll", price: "₹180" },
+      { name: "Tandoori Roll", price: "₹180" },
+      { name: "Paneer Roll", price: "₹150" },
+      { name: "French Fries", price: "₹160" },
+      { name: "Potato Garlic Poppers", price: "₹150" },
+      { name: "Hash Browns", price: "₹190" }
     ]
   },
   {
     id: "pizza",
-    name: "Pizza, Burger & Bruschetta",
+    name: "Pizza & Burger",
     description: "Italian favorites",
-    image: "https://itihaasafoods.in/assets/images/5.jpg",
+    icon: "🍕",
     items: [
-      { name: "Veg Paradise Pizza", price: "₹220", description: "Loaded vegetables" },
-      { name: "Corn Cheese Pizza", price: "₹220", description: "Sweet corn & cheese" },
-      { name: "Paneer Pizza", price: "₹220", description: "Paneer perfection" },
-      { name: "Chicken Supreme Pizza", price: "₹250", description: "Loaded chicken" },
-      { name: "Chicken Tikka Pizza", price: "₹250", description: "Tikka flavored" },
-      { name: "Supreme Special Pizza", price: "₹250", description: "Everything pizza" },
-      { name: "Veg Burger", price: "₹150", description: "Veggie patty" },
-      { name: "Chicken Burger", price: "₹180", description: "Juicy chicken" },
-      { name: "Veg Bruschetta", price: "₹150", description: "Toasted Italian bread" },
-      { name: "Chicken Bruschetta", price: "₹180", description: "Chicken topped" }
+      { name: "Veg Paradise Pizza", price: "₹220" },
+      { name: "Corn Cheese Pizza", price: "₹220" },
+      { name: "Paneer Pizza", price: "₹220" },
+      { name: "Chicken Supreme Pizza", price: "₹250" },
+      { name: "Chicken Tikka Pizza", price: "₹250" },
+      { name: "Supreme Special Pizza", price: "₹250" },
+      { name: "Veg Burger", price: "₹150" },
+      { name: "Chicken Burger", price: "₹180" },
+      { name: "Veg Bruschetta", price: "₹150" },
+      { name: "Chicken Bruschetta", price: "₹180" }
     ]
   },
   {
     id: "pastries",
     name: "Pastries & Cakes",
     description: "Sweet treats",
-    image: "https://itihaasafoods.in/assets/images/NZ6_0641.jpeg",
+    icon: "🍰",
     items: [
       { name: "Mocha Pastry", price: "₹140" },
       { name: "Blueberry Pastry", price: "₹140" },
@@ -195,16 +195,16 @@ export const menuCategories = [
   },
   {
     id: "milkshakes",
-    name: "Milkshakes & Desserts",
-    description: "Decadent desserts",
-    image: "https://itihaasafoods.in/assets/images/05-Perfect-Cup-Everytime.jpeg",
+    name: "Shakes & Desserts",
+    description: "Decadent treats",
+    icon: "🥛",
     items: [
-      { name: "Oreo Shake", price: "₹210", description: "Crushed Oreo bliss" },
-      { name: "Kit-Kat Shake", price: "₹210", description: "Chocolate wafer shake" },
-      { name: "Brownie Fudge Shake", price: "₹240", description: "Rich brownie shake" },
-      { name: "Melting Brownie", price: "₹90", description: "Warm gooey center" },
-      { name: "Nutella Bombolone", price: "₹160", description: "Nutella-filled donut" },
-      { name: "Chocolate Mousse", price: "₹180", description: "Smooth chocolate" }
+      { name: "Oreo Shake", price: "₹210" },
+      { name: "Kit-Kat Shake", price: "₹210" },
+      { name: "Brownie Fudge Shake", price: "₹240" },
+      { name: "Melting Brownie", price: "₹90" },
+      { name: "Nutella Bombolone", price: "₹160" },
+      { name: "Chocolate Mousse", price: "₹180" }
     ]
   }
 ];
@@ -239,7 +239,7 @@ export const testimonials = [
 export const aboutContent = {
   title: "Crafting Moments, One Cup at a Time",
   paragraphs: [
-    "Welcome to ITHI HA ASA Foods, where coffee isn't just a drink—it's an experience. Nestled in the heart of Seetammadhara, we've created a space that celebrates quality, comfort, and community.",
+    "Welcome to ITHI HA ASA Foods, where coffee isn't just a drink—it's an experience. Located in the heart of Visakhapatnam, we've created a space that celebrates quality, comfort, and community.",
     "Every bean is carefully selected, every brew meticulously crafted, and every moment designed to make you feel at home. Whether you're here for a quick espresso or a long conversation over lattes, we're here to make it memorable."
   ]
 };

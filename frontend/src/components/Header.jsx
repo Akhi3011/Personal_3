@@ -26,7 +26,6 @@ const Header = () => {
       <div className="container header-content">
         <div className="logo-section">
           <h1 className="logo-text">ITHI HA ASA Foods</h1>
-          <span className="logo-telugu">బీన్ బోర్డు</span>
         </div>
 
         <nav className="nav-links">
