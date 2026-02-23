@@ -28,43 +28,33 @@ const Menu = () => {
         <div className="menu-tabs">
           <div className="tabs-scroll">
             <button onClick={() => setActiveCategory('coffee')} className={`tab-button ${activeCategory === 'coffee' ? 'active' : ''}`}>
-              <span className="tab-icon">☕</span>
               <span className="tab-name">Coffee Menu</span>
             </button>
             <button onClick={() => setActiveCategory('frappe')} className={`tab-button ${activeCategory === 'frappe' ? 'active' : ''}`}>
-              <span className="tab-icon">🥤</span>
               <span className="tab-name">Cream Frappe</span>
             </button>
             <button onClick={() => setActiveCategory('cozy')} className={`tab-button ${activeCategory === 'cozy' ? 'active' : ''}`}>
-              <span className="tab-icon">☕</span>
               <span className="tab-name">Cozy Sips</span>
             </button>
             <button onClick={() => setActiveCategory('icedtea')} className={`tab-button ${activeCategory === 'icedtea' ? 'active' : ''}`}>
-              <span className="tab-icon">🍹</span>
               <span className="tab-name">Iced Teas</span>
             </button>
             <button onClick={() => setActiveCategory('hottea')} className={`tab-button ${activeCategory === 'hottea' ? 'active' : ''}`}>
-              <span className="tab-icon">🍵</span>
               <span className="tab-name">Hot Teas</span>
             </button>
             <button onClick={() => setActiveCategory('sandwiches')} className={`tab-button ${activeCategory === 'sandwiches' ? 'active' : ''}`}>
-              <span className="tab-icon">🥪</span>
               <span className="tab-name">Sandwiches</span>
             </button>
             <button onClick={() => setActiveCategory('rolls')} className={`tab-button ${activeCategory === 'rolls' ? 'active' : ''}`}>
-              <span className="tab-icon">🌯</span>
               <span className="tab-name">Rolls & Fries</span>
             </button>
             <button onClick={() => setActiveCategory('pizza')} className={`tab-button ${activeCategory === 'pizza' ? 'active' : ''}`}>
-              <span className="tab-icon">🍕</span>
               <span className="tab-name">Pizza & Burger</span>
             </button>
             <button onClick={() => setActiveCategory('pastries')} className={`tab-button ${activeCategory === 'pastries' ? 'active' : ''}`}>
-              <span className="tab-icon">🍰</span>
               <span className="tab-name">Pastries & Cakes</span>
             </button>
             <button onClick={() => setActiveCategory('milkshakes')} className={`tab-button ${activeCategory === 'milkshakes' ? 'active' : ''}`}>
-              <span className="tab-icon">🥛</span>
               <span className="tab-name">Shakes & Desserts</span>
             </button>
           </div>

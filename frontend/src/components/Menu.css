@@ -40,16 +40,19 @@
   background: var(--bg-card);
   border: 2px solid var(--border-light);
   border-radius: 0.75rem;
-  padding: 0.75rem 1.25rem;
+  padding: 0.875rem 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
+  justify-content: center;
+  font-family: 'SF Mono', monospace;
+  font-size: 0.813rem;
   font-weight: 500;
   color: var(--text-secondary);
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 .tab-button:hover {
@@ -64,15 +67,12 @@
   border-color: var(--text-primary);
 }
 
-.tab-icon {
-  font-size: 1.25rem;
-}
-
 .tab-name {
   font-family: 'SF Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-  font-size: 0.75rem;
+  font-size: 0.813rem;
+  font-weight: 500;
 }
 
 /* Menu Content Grid */
