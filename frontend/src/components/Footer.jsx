@@ -12,7 +12,6 @@ const Footer = () => {
               <Coffee size={32} />
               <div>
                 <h3 className="heading-3">ITHI HA ASA Foods</h3>
-                <p className="caption">బీన్ బోర్డు – సీతమ్మధార</p>
               </div>
             </div>
             <p className="body-small footer-tagline">
@@ -55,7 +54,10 @@ const Footer = () => {
                 </a>
               </div>
               <p className="body-small">
-                <a href="tel:07382638620" className="footer-phone">073826 38620</a>
+                <a href="tel:+918977531113" className="footer-phone">+91 89775 31113</a>
+              </p>
+              <p className="body-small">
+                <a href="mailto:info.itihasafoods@gmail.com" className="footer-phone">info.itihasafoods@gmail.com</a>
               </p>
             </div>
           </div>
@@ -66,7 +68,7 @@ const Footer = () => {
             © 2024 Bean Board. All rights reserved.
           </p>
           <p className="caption">
-            Seetammadhara, Visakhapatnam
+            Vishalakshi Nagar, Visakhapatnam
           </p>
         </div>
       </div>
